@@ -43,15 +43,13 @@ The CNN model follows this structure:
 
 | Optimizer | Accuracy          | Loss       | Observation                              |
 | --------- | ----------------- | ---------- | ---------------------------------------- |
-| Adam      | High (~99%)       | Low        | Fast convergence but slight fluctuations |
-| Adadelta  | Stable            | Moderate   | Minimal improvement over epochs          |
-| SGD       | **Best (~99.6%)** | **Lowest** | Most stable and best generalization      |
+| Adam      | 0.9904       | 0.0354  | Best overall performance; fastest convergence and highest accuracy (~99%) |
+| Adadelta  | 0.8745            | 0.4939   | Stable but slower and lower accuracy (~87.5%)         |
+| SGD       | 0.9861 | 0.0414 | Slightly slower convergence but still high accuracy (~98.6%)     |
 
 ### Key Insights:
 
-* SGD achieved the best performance with the lowest validation loss
-* Adam converged quickly but showed slight instability
-* Adadelta remained stable but lacked significant learning progress
+* Adam achieved the best performance with the lowest validation loss
 
 ##  Visualizations
 
@@ -68,7 +66,7 @@ The following plots were generated:
 * Proper evaluation using validation and test datasets
 ##  Conclusion
 This project demonstrates the effectiveness of CNNs in image classification tasks.
-Through optimizer comparison, it is evident that **SGD provides the best generalization performance** for this architecture.
+Through optimizer comparison, it is evident that **Adam provides the best generalization performance** for this architecture.
 ## Author
 Ephrem Ftye
 Aspiring Data Scientist
