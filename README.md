@@ -39,7 +39,7 @@ The CNN model follows this structure:
 * Adadelta
 * Stochastic Gradient Descent (SGD)
 
-## Results & Analysis
+## Results & Analysis for test dataset
 
 | Optimizer | Accuracy          | Loss       | Observation                              |
 | --------- | ----------------- | ---------- | ---------------------------------------- |
